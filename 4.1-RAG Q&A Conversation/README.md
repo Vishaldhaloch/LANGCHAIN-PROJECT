@@ -50,26 +50,28 @@ This tool is ideal for individuals or organizations looking to interact with lar
    git clone https://github.com/yourusername/conversational-rag-pdf.git  
    cd conversational-rag-pdf  
 2. Create a virtual environment:
-   
+    ```bash
    python -m venv env  
    source env/bin/activate  # On Windows: `env\Scripts\activate`
 4. Install dependencies:
-   
+   ```bash
    pip install -r requirements.txt
    
 6. Create a .env file in the root directory and add your API tokens:
+   ```bash
    HF_TOKEN=your_huggingface_api_key
 
 
 Usage
 1. Run the Streamlit app:
+   ```bash
    streamlit run app.py
    
-2. Open the web interface in your browser (default: http://localhost:8501).
+3. Open the web interface in your browser (default: http://localhost:8501).
 
-3. Enter your Groq API key in the provided input field.
+4. Enter your Groq API key in the provided input field.
 
-4. Upload PDF files and start interacting with their content through chat!
+5. Upload PDF files and start interacting with their content through chat!
 
 
 

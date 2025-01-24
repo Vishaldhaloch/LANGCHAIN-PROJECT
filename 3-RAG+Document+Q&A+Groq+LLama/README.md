@@ -78,9 +78,9 @@ This project implements a **Retrieval-Augmented Generation (RAG)** system with *
    
 2. **Interact with the App:**
    
-    **Enter your query in the chat input (e.g., "What is machine learning?").**
-    **Click on "Document Embedding" to load and process the research papers.**
-    **View responses generated in real time based on the documents.**
+    1. Enter your query in the chat input (e.g., "What is machine learning?").**
+    2. Click on "Document Embedding" to load and process the research papers.**
+    3. View responses generated in real time based on the documents.**
    
 3.**Document Similarity Search:**
   You can expand the search results to view the context from the documents that helped answer your query.

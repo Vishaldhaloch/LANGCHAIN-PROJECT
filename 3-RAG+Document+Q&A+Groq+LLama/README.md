@@ -78,9 +78,9 @@ This project implements a **Retrieval-Augmented Generation (RAG)** system with *
    
 2. **Interact with the App:**
    
-    1. Enter your query in the chat input (e.g., "What is machine learning?").**
-    2. Click on "Document Embedding" to load and process the research papers.**
-    3. View responses generated in real time based on the documents.**
+    - Enter your query in the chat input (e.g., "What is machine learning?").**
+    - Click on "Document Embedding" to load and process the research papers.**
+    - View responses generated in real time based on the documents.**
    
 3.**Document Similarity Search:**
   You can expand the search results to view the context from the documents that helped answer your query.
@@ -88,17 +88,17 @@ This project implements a **Retrieval-Augmented Generation (RAG)** system with *
 **Code Overview**
 **Initialization:**
 
- The app loads the API keys, initializes embeddings, and loads the research papers.
+ - The app loads the API keys, initializes embeddings, and loads the research papers.
 
 **Document Processing:**
 
- Research papers are embedded into a vector database for efficient retrieval and querying.
+ - Research papers are embedded into a vector database for efficient retrieval and querying.
 
 **Q&A Generation:**
 
- User queries are processed with a prompt template to ensure accurate answers based on the document context.
+ - User queries are processed with a prompt template to ensure accurate answers based on the document context.
 
 **Document Retrieval:**
 
- FAISS is used for efficient document retrieval, and the context is passed to the Llama3 model to generate answers.
+ - FAISS is used for efficient document retrieval, and the context is passed to the Llama3 model to generate answers.
 

@@ -1,77 +1,93 @@
-# Conversational RAG With PDF Uploads and Chat History  
+﻿# Conversation RAG with PDF Upload and Chat History
 
-This project is a **Conversational Retrieval-Augmented Generation (RAG) application** built with Streamlit. It allows users to:  
-- Upload PDF documents  
-- Extract and process their content  
-- Interact with the extracted data in a conversational way  
+## Overview
 
-The application maintains a **chat history** for better context during interactions.  
+This project implements a Retrieval-Augmented Generation (RAG) system using Langchain and Streamlit. It allows users to upload PDF documents, interact with a Q&A system, and maintain chat history for context-aware responses.
 
----
+## Features
 
-## Features  
+- **PDF Upload:** Upload and process PDF files.
+- **Chat History:** Maintain and utilize chat history for context-aware responses.
+- **Interactive Q&A:** Ask questions based on uploaded documents and get concise answers.
+- **Secure API Integration:** Uses Groq and HuggingFace for language model capabilities.
 
-- **Upload PDFs:** Upload one or multiple PDF files to extract content.  
-- **Text Embeddings:** Uses the `all-MiniLM-L6-v2` model to generate embeddings for document content.  
-- **Chroma Vector Store:** Stores and retrieves document embeddings for fast, relevant responses.  
-- **Context-Aware Q&A:** Reformulates questions based on chat history for better context.  
-- **Streamlit UI:** Simple and interactive web interface for uploading files and chatting.  
-- **Session Management:** Maintains chat history across sessions for continuity.  
+## Setup Instructions
 
----
+### Prerequisites
 
-## Overview  
+- Python 3.7 or higher
+- Pip (Python package installer)
 
-The **Conversational RAG with PDF Uploads** combines cutting-edge natural language processing techniques to enable seamless interaction with document-based content.  
+### Installation
 
-Key components include:  
-- **PDF Parsing and Processing:** Extract text from uploaded PDFs.  
-- **Document Embeddings:** Use pre-trained models to create semantic embeddings of the document content.  
-- **Chroma Vector Store:** Efficiently store and retrieve document embeddings to provide contextually relevant answers.  
-- **Conversational AI:** With `ChatGroq`, the system delivers coherent and concise responses while considering chat history for improved context understanding.  
-- **Streamlit Frontend:** An intuitive user interface for managing files and interacting with the system.  
-
-This tool is ideal for individuals or organizations looking to interact with large volumes of PDF-based information without manually reading through documents.  
-
----
-
-## Setup  
-
-### Prerequisites  
-
-- Python 3.9 or above  
-- An account with Groq and the Groq API key  
-- Hugging Face API token  
-
-### Installation  
-
-1. Clone the repository:  
-   ```bash  
-   git clone https://github.com/yourusername/conversational-rag-pdf.git  
-   cd conversational-rag-pdf  
-2. Create a virtual environment:
-    ```bash
-   python -m venv env  
-   source env/bin/activate  # On Windows: `env\Scripts\activate`
-4. Install dependencies:
+1. **Clone the Repository:**
    ```bash
-   pip install -r requirements.txt
-   
-6. Create a .env file in the root directory and add your API tokens:
+   git clone <repository-url>
+   cd <repository-directory>
+   ```
+
+2. **Install Required Libraries:**
+   Use pip to install the necessary Python libraries:
    ```bash
-   HF_TOKEN=your_huggingface_api_key
+   pip install streamlit langchain langchain-community langchain-groq langchain-huggingface langchain-text-splitters dotenv
+   ```
 
+3. **Set Up Environment Variables:**
+   Create a `.env` file in the root of your project directory with the following content:
+   ```plaintext
+   HF_TOKEN=<your_huggingface_token>
+   ```
+   Replace `<your_huggingface_token>` with your HuggingFace token.
 
-Usage
-1. Run the Streamlit app:
+## Running the Application
+
+1. **Save the Python Code:**
+   Save the provided Python code into a file, e.g., `app.py`.
+
+2. **Run Streamlit Application:**
+   Start the Streamlit application with the following command:
    ```bash
    streamlit run app.py
-   
-3. Open the web interface in your browser (default: http://localhost:8501).
+   ```
 
-4. Enter your Groq API key in the provided input field.
+3. **Access the Application:**
+   Open a web browser and go to `http://localhost:8501` to interact with the application.
 
-5. Upload PDF files and start interacting with their content through chat!
+## Usage
 
+1. **Upload PDF:**
+   Use the file uploader to select and upload your PDF documents.
 
+2. **Enter API Key:**
+   Provide your Groq API key for language model access.
 
+3. **Ask Questions:**
+   Enter your questions into the provided input field to receive contextually relevant answers based on the uploaded PDF and chat history.
+
+## Code Overview
+
+- **Initialization:**
+  Loads environment variables and initializes embeddings and language models.
+
+- **PDF Handling:**
+  Manages the upload and processing of PDF files.
+  Splits documents into manageable chunks for better r
+  etrieval performance.
+
+- **Retrieval and Q&A:**
+  Uses FAISS for document retrieval.
+  Implements a history-aware retriever for context-aware responses.
+  Provides concise answers based on the retrieved context.
+
+## Contributing
+
+Contributions to this project are welcome! Please fork the repository and submit a pull request with your proposed changes.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- Thanks to the Langchain and Streamlit communities for their excellent libraries.
+- Groq and HuggingFace for providing the language model capabilities.

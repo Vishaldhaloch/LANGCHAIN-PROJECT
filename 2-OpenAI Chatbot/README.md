@@ -44,30 +44,30 @@ This project implements an **Enhanced Q&A Chatbot** using **OpenAI's GPT models*
    git clone <repository_url>
    cd <repository_folder>
    
-2.**Create a Conda Environment:**
+2. **Create a Conda Environment:**
     ```bash
     conda create -n openai-chatbot python=3.8 -y
 
-3.**Activate the Environment:**
+3. **Activate the Environment:**
     ```bash
     conda activate openai-chatbot
   
-4.**Install Dependencies:**
-  Install the required libraries using requirements.txt:
+4. **Install Dependencies:**
+   Install the required libraries using requirements.txt:
     ```bash
     pip install -r requirements.txt
    
-5.**Set Up Environment Variables:**
-  Create a .env file in the project root with the following content:
+5. **Set Up Environment Variables:**
+   Create a .env file in the project root with the following content:
     ```bash
     OPENAI_API_KEY=your_openai_api_key
     LANGCHAIN_API_KEY=your_langchain_api_key
    
 **How to Run**
-1.Run the Streamlit App:
-Start the app by executing:
-  ```bash
-  streamlit run app.py
+1. Run the Streamlit App:
+   Start the app by executing:
+    ```bash
+    streamlit run app.py
  
 2.**Interact with the Chatbot:**
 

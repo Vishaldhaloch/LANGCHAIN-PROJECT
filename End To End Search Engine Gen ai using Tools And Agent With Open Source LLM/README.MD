@@ -77,13 +77,13 @@ How to Run
 1. Set Up the Tools (Optional):
 Open toolagent.ipynb in a Jupyter Notebook and run all cells to ensure the tools and agents are set up correctly.
 
-2. **Run the Streamlit App:**
-   Start the app by executing:
+2. Run the Streamlit App:
+   **Start the app by executing:**
 
    ```bash
    streamlit run app.py
 
-3. **Interact with the App:**
+3. Interact with the App:
 
 Enter your Groq API Key in the sidebar.
 Type your query in the chat input (e.g., "What is machine learning?").

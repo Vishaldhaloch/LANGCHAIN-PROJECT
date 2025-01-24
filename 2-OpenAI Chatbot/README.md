@@ -71,21 +71,28 @@ This project implements an **Enhanced Q&A Chatbot** using **OpenAI's GPT models*
  
 2.**Interact with the Chatbot:**
 
-   1.Enter your OpenAI API Key in the sidebar.
-   2.Select the OpenAI model (e.g., gpt-4, gpt-4-turbo).
-   3.Adjust response parameters such as temperature and max tokens.
-   4.Ask any question in the main interface, and the chatbot will provide an answer in real time.
+   1. Enter your OpenAI API Key in the sidebar.
+   2. 
+   3. Select the OpenAI model (e.g., gpt-4, gpt-4-turbo).
+   4. 
+   5. Adjust response parameters such as temperature and max tokens.
+   6. 
+   7. Ask any question in the main interface, and the chatbot will provide an answer in real time.
   
-**Code Overview**
-  Initialization:
-  The app initializes the API keys and sets up the LangChain API key for tracking.
+ **Code Overview**
+ **Initialization:**
+ 
+  - The app initializes the API keys and sets up the LangChain API key for tracking.
 
 **Prompt Template:**
-  The prompt template is designed to ensure the model provides helpful answers based on the user's input.
+
+ - The prompt template is designed to ensure the model provides helpful answers based on the user's input.
 
 **Response Generation:**
-  A function is used to generate responses from OpenAI's GPT models based on the settings provided.
+
+ - A function is used to generate responses from OpenAI's GPT models based on the settings provided.
 
 **Customization:**
-  Users can adjust parameters such as temperature and maximum tokens for controlling the response style and length.
+
+ - Users can adjust parameters such as temperature and maximum tokens for controlling the response style and length.
 

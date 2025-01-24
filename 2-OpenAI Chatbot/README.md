@@ -69,15 +69,12 @@ This project implements an **Enhanced Q&A Chatbot** using **OpenAI's GPT models*
     ```bash
     streamlit run app.py
  
-2.**Interact with the Chatbot:**
+2. **Interact with the Chatbot:**
 
-   1. Enter your OpenAI API Key in the sidebar.
-   2. 
-   3. Select the OpenAI model (e.g., gpt-4, gpt-4-turbo).
-   4. 
-   5. Adjust response parameters such as temperature and max tokens.
-   6. 
-   7. Ask any question in the main interface, and the chatbot will provide an answer in real time.
+    - Enter your OpenAI API Key in the sidebar. 
+    - Select the OpenAI model (e.g., gpt-4, gpt-4-turbo). 
+    - Adjust response parameters such as temperature and max tokens. 
+    - Ask any question in the main interface, and the chatbot will provide an answer in real time.
   
  **Code Overview**
  **Initialization:**

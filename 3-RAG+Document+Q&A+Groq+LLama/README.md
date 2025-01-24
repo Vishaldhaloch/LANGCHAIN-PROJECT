@@ -51,7 +51,7 @@ This project implements a **Retrieval-Augmented Generation (RAG)** system with *
    cd <repository_folder>
    
 2. Create a Conda Environment:
-    bash
+    ```bash
     conda create -n rag-gen-ai-search python=3.8 -y
    
 4. Activate the Environment:

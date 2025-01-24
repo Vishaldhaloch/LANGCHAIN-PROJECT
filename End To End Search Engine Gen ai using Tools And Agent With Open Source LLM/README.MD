@@ -51,23 +51,23 @@ This project is an **End-to-End Generative AI Search Engine** that uses LangChai
    git clone <repository_url>
    cd <repository_folder>
 
-2. Create a Conda Environment:
+2. **Create a Conda Environment:**
 
- ```bash
-conda create -n gen-ai-search python=3.8 -y
+   ```bash
+  conda create -n gen-ai-search python=3.8 -y
 
-3.Activate the Environment:
+3. **Activate the Environment:**
 
-```bash
-conda activate gen-ai-search
+   ```bash
+  conda activate gen-ai-search
 
-4. Install Dependencies: Install the required libraries using requirements.txt:
+4. **Install Dependencies: Install the required libraries using requirements.txt:**
 
-```bash
-pip install -r requirements.txt
+  ```bash
+  pip install -r requirements.txt
 
 5. Set Up Environment Variables:
-Create a .env file in the project root with the following content:
+**Create a .env file in the project root with the following content:**
 
 ```bash
 GROQ_API_KEY=your_groq_api_key
@@ -77,11 +77,11 @@ How to Run
 1. Set Up the Tools (Optional):
 Open toolagent.ipynb in a Jupyter Notebook and run all cells to ensure the tools and agents are set up correctly.
 
-2.Run the Streamlit App:
-Start the app by executing:
+2. **Run the Streamlit App:**
+  Start the app by executing:
 
-```bash
-streamlit run app.py
+  ```bash
+  streamlit run app.py
 
 3. **Interact with the App:**
 

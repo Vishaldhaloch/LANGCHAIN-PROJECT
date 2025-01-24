@@ -1,4 +1,4 @@
-# End-to-End Generative AI Search Engine
+ # End-to-End Generative AI Search Engine
 
 This project is an **End-to-End Generative AI Search Engine** that uses LangChain, Streamlit, and an open-source LLM to answer user queries. The system integrates tools like Arxiv, Wikipedia, and DuckDuckGo search to provide contextual, real-time information, all wrapped in an interactive web app.
 
@@ -54,23 +54,23 @@ This project is an **End-to-End Generative AI Search Engine** that uses LangChai
 2. **Create a Conda Environment:**
 
    ```bash
-  conda create -n gen-ai-search python=3.8 -y
+   conda create -n gen-ai-search python=3.8 -y
 
 3. **Activate the Environment:**
 
    ```bash
-  conda activate gen-ai-search
+   conda activate gen-ai-search
 
 4. **Install Dependencies: Install the required libraries using requirements.txt:**
 
-  ```bash
-  pip install -r requirements.txt
+   ```bash
+   pip install -r requirements.txt
 
 5. Set Up Environment Variables:
-**Create a .env file in the project root with the following content:**
+  **Create a .env file in the project root with the following content:**
 
-```bash
-GROQ_API_KEY=your_groq_api_key
+  ```bash
+  GROQ_API_KEY=your_groq_api_key
 
 
 How to Run
@@ -78,10 +78,10 @@ How to Run
 Open toolagent.ipynb in a Jupyter Notebook and run all cells to ensure the tools and agents are set up correctly.
 
 2. **Run the Streamlit App:**
-  Start the app by executing:
+   Start the app by executing:
 
-  ```bash
-  streamlit run app.py
+   ```bash
+   streamlit run app.py
 
 3. **Interact with the App:**
 

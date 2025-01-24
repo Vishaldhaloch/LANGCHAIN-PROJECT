@@ -88,17 +88,17 @@ This project implements a **Retrieval-Augmented Generation (RAG)** system with *
 **Code Overview**
 **Initialization:**
 
-The app loads the API keys, initializes embeddings, and loads the research papers.
+ The app loads the API keys, initializes embeddings, and loads the research papers.
 
 **Document Processing:**
 
-Research papers are embedded into a vector database for efficient retrieval and querying.
+ Research papers are embedded into a vector database for efficient retrieval and querying.
 
 **Q&A Generation:**
 
-User queries are processed with a prompt template to ensure accurate answers based on the document context.
+ User queries are processed with a prompt template to ensure accurate answers based on the document context.
 
 **Document Retrieval:**
 
-FAISS is used for efficient document retrieval, and the context is passed to the Llama3 model to generate answers.
+ FAISS is used for efficient document retrieval, and the context is passed to the Llama3 model to generate answers.
 
